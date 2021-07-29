@@ -1,4 +1,8 @@
-# -*- coding: utf-8 -*-
+# DL_model.py
+#
+# Written by Pegah Mavaie and Larry Holder
+#
+# Copyright 2021, Washington State University
 
 import os
 

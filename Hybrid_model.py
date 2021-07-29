@@ -1,3 +1,9 @@
+# Hybrid_model.py
+#
+# Written by Pegah Mavaie and Larry Holder
+#
+# Copyright 2021, Washington State University
+
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
