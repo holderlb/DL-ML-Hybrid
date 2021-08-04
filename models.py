@@ -52,9 +52,9 @@ RN_PREFIX = 'Rattus_norvegicus.Rnor_6.0.dna.chromosome.'
 # List of chromosomes to draw from for training and testing sets: '1'-'20','X','Y'
 CHROMOSOMES = ['1']
 # A threshold for choosing a p-value for sampling DMRs: edgeR.p.value < threshold_dmr
-THRESHOLD_DMR = 1e-2 # TODO: change back to 1e-15
+THRESHOLD_DMR = 1e-5
 # A threshold for choosing a p-value for sampling non-DMRs: edgeR.p.value > (1 - threshold_ndmr)
-THRESHOLD_NDMR = 1e-5 # TODO: change back to 1e-8
+THRESHOLD_NDMR = 1e-5
 # Threshold on fraction of DNA sequence that consists of CGs to be a CG island
 THRESHOLD_CG_ISLAND = 0.2
 # Input_shape is used for the "input_shape" parameter of the first layer of DL network.
@@ -355,8 +355,8 @@ def visualization_for_a_node(data, labels, model, layer_name="conv1d_2"):
     pysster_data = Data([OUTPUT_DIR + 'output_negative.fasta', OUTPUT_DIR + 'output_positive.fasta'], "ACGTN")
     visualize_optimized_inputs(model, pysster_data, layer_name, OUTPUT_DIR + 'pes_conv1.png', bound=0.4)
 
-# TODO: change default nb_epoch=30
-def fit_dl_model(train_X, train_ground, batch_size=64, nb_classes=2, nb_epoch=10):
+
+def fit_dl_model(train_X, train_ground, batch_size=64, nb_classes=2, nb_epoch=30):
     global INPUT_SHAPE, OUTPUT_DIR, MODEL_LOG_FILE
     # Create the model and fit it with the data
     model = build_dl_model (INPUT_SHAPE, nb_classes)

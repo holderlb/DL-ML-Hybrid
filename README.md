@@ -55,7 +55,7 @@ Download the data using the links provided in Data Availabilty section. The toxi
 
 ### Step 2: Choose thresholds
 
-The genome was divided into 1000bp regions, and DMRs with a specific pathology were identified. A p-value was calculated for each of the 1000bp regions indicating the probability the region is not a DMR (non-DMR). Those regions whose p-value is less than 10<sup>-15</sup> comprise the final set of DMRs, the positive examples in the training set. Those regions whose p-value is greater than (1 - 10<sup>-8</sup>) comprise the negative examples (non-DMRs). Different thresholds can be chosen by changing the values of `THRESHOLD_DMR` and `THRESHOLD_NDMR` in `models.py`.
+The genome was divided into 1000bp regions, and DMRs with a specific pathology were identified. A p-value was calculated for each of the 1000bp regions indicating the probability the region is not a DMR (non-DMR). Those regions whose p-value is less than 10<sup>-5</sup> comprise the final set of DMRs, the positive examples in the training set. Those regions whose p-value is greater than (1 - 10<sup>-5</sup>) comprise the negative examples (non-DMRs). Different thresholds can be chosen by changing the values of `THRESHOLD_DMR` and `THRESHOLD_NDMR` in `models.py`.
 
 ### Step 3: Run the code 
 
