@@ -20,11 +20,11 @@ The DL network is used to learn features, which are extracted and used as the in
 
 The DL-ML-Hybrid system uses Python 3 and requires the following modules: 
 
-* Tensorflow
-* Keras
-* Biopython
-* Numpy
-* Pandas 
+* tensorflow
+* keras
+* biopython
+* numpy
+* pandas 
 * sklearn
 * xgboost
 * pysster
