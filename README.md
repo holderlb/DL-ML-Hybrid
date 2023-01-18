@@ -2,7 +2,7 @@
 
 In this project, we introduce a hybrid DL-ML approach that uses a deep neural network for extracting features and a non-DL classifier for classification tasks. The approach is targeted toward DNA sequence-based classification tasks. This particular implementation includes code and data designed to predict environmentally responsive transgenerational differential DNA methylated regions (DMRs). 
 
-# Overview
+## Overview
 
 The goal is to build a classification model that takes a region of the genome as input and predicts the region’s susceptibility to develop an environmentally induced transgenerational alteration in differential DNA methylation regions (DMRs) in the F3 generation from an ancestrally exposed F0 generation (great grandmother). 
 
@@ -97,6 +97,6 @@ The program has options to specify the type of model, type of training or testin
 
 The parameter for the current version of the project is for [1000,5] NumPy one-hot encoding array. To train a hybrid model on a different dataset, load your Numpy array dataset instead of data and labels and modify the `INPUT_SHAPE` regarding the size of your sequence. E.g., if a sequence is 500bp and the nucleotides in each region are A, C, T, G, and N the `INPUT_SHAPE` is [500,5].
 
-# Acknowledgments
+# Acknowledgements
 
 This work was supported by the John Templeton Foundation grant number 61174.
