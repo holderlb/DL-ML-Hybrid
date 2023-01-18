@@ -97,6 +97,6 @@ The program has options to specify the type of model, type of training or testin
 
 The parameter for the current version of the project is for [1000,5] NumPy one-hot encoding array. To train a hybrid model on a different dataset, load your Numpy array dataset instead of data and labels and modify the `INPUT_SHAPE` regarding the size of your sequence. E.g., if a sequence is 500bp and the nucleotides in each region are A, C, T, G, and N the `INPUT_SHAPE` is [500,5].
 
-# Acknowledgements
+## Acknowledgements
 
 This work was supported by the John Templeton Foundation grant number 61174.
